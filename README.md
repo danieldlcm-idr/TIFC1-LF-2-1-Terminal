@@ -82,7 +82,7 @@ Edita el contenido visible desde el navegador con:
 echo '¡Hola desde mi servidor Ubuntu EC2!' | sudo tee /var/www/html/index.html
 ```
 
->- `tee` permite redirigir con permisos elevados
+> `tee` permite redirigir con permisos elevados
 
 Luego abre tu navegador y accede a:
 
