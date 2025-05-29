@@ -34,7 +34,7 @@ Una vez conectado, ejecuta lo siguiente para actualizar los paquetes del sistema
 
 ```bash
 sudo apt update
-sudo apt upgrade -y
+sudo apt upgrade
 ```
 
 ## 🌐 Instalación del servidor web Apache
@@ -42,7 +42,7 @@ sudo apt upgrade -y
 Para instalar y activar Apache en tu servidor Ubuntu, ejecuta:
 
 ```bash
-sudo apt install apache2 -y
+sudo apt install apache2
 sudo systemctl start apache2
 sudo systemctl enable apache2
 ```
