@@ -1,6 +1,6 @@
 # 📚 Glosario de conceptos técnicos
 
-### - apache2
+### -apache2
 
 Software de servidor web HTTP de código abierto (Apache HTTP Server), utilizado para servir páginas web desde sistemas basados en Unix/Linux.
 
