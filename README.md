@@ -50,7 +50,7 @@ Para instalar Apache en el servidor Ubuntu, ejecuta:
 sudo apt install apache2
 ```
 
-Consultar la versión instalada
+Consultar la versión instalada:
 
 ```bash
 sudo apache2 -v
@@ -60,6 +60,12 @@ Inicia el servicio apache2 usando systemctl, el comando para controlar servicios
 
 ```bash
 sudo systemctl start apache2
+```
+
+Consulta el estado del servicio apache2:
+
+```bash
+sudo systemctl status apache2
 ```
 
 Configura Apache para que se inicie automáticamente al arrancar el sistema.
