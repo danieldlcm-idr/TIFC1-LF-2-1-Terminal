@@ -30,20 +30,41 @@ En esta guía aprenderás a conectarte a una instancia EC2 de Ubuntu en AWS util
 
 ## 🔄 Actualización del sistema Ubuntu
 
-Una vez conectado, ejecuta lo siguiente para actualizar los paquetes del sistema:
+Una vez conectado, ejecuta lo siguiente para actualizar el índice local de paquetes y descarga una lista actualizada de los paquetes disponibles y sus versiones:
 
 ```bash
 sudo apt update
+```
+
+Instala las actualizaciones disponibles de los paquetes que ya tienes instalados:
+
+```bash
 sudo apt upgrade
 ```
 
 ## 🌐 Instalación del servidor web Apache
 
-Para instalar y activar Apache en tu servidor Ubuntu, ejecuta:
+Para instalar Apache en el servidor Ubuntu, ejecuta:
 
 ```bash
 sudo apt install apache2
+```
+
+Consultar la versión instalada
+
+```bash
+sudo apache2 -v
+```
+
+Inicia el servicio apache2 usando systemctl, el comando para controlar servicios en sistema:
+
+```bash
 sudo systemctl start apache2
+```
+
+Configura Apache para que se inicie automáticamente al arrancar el sistema.
+
+```bash
 sudo systemctl enable apache2
 ```
 
@@ -55,6 +76,8 @@ Edita el contenido visible desde el navegador con:
 echo '¡Hola desde mi servidor Ubuntu EC2!' | sudo tee /var/www/html/index.html
 ```
 
+>- `tee` permite redirigir con permisos elevados
+
 Luego abre tu navegador y accede a:
 
 ```
@@ -63,6 +86,3 @@ http://<IP_PUBLICA>
 
 Deberías ver el mensaje personalizado que escribiste.
 
-## 📝 Conclusión
-
-Has logrado conectarte exitosamente a una instancia EC2 con Ubuntu utilizando `.pem`, actualizar tu sistema, instalar Apache y visualizar tu página web en el navegador.
