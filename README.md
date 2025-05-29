@@ -90,5 +90,9 @@ Luego abre tu navegador y accede a:
 http://<IP_PUBLICA>
 ```
 
-Deberías ver el mensaje personalizado que escribiste.
+---
+
+## Glosario
+
+Puedes consultar el glosario de términos en [Glosario](./glosario.md)
 
